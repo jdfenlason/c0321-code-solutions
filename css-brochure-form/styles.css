@@ -71,4 +71,5 @@ button {
   height: 35px;
   border: none;
   float: right;
+  text-transform: uppercase; 
 }

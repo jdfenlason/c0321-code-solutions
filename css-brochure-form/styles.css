@@ -1,14 +1,14 @@
 
 .container {
-width: auto;
-margin: auto;
+width: 100%;
 display: flex;
-justify-content: center;
 }
 
 form {
-  text-transform: uppercase;
-
+text-transform: uppercase;
+max-width: 650px;
+margin: auto;
+display: flexbox;
 }
 
 h2 {
@@ -70,6 +70,11 @@ button {
   width: 100px;
   height: 35px;
   border: none;
-  float: right;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+
 }

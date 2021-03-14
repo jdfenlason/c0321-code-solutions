@@ -1,0 +1,140 @@
+header {
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 20px;
+}
+nav {
+  padding: 0.5rem;
+  justify-content: space-evenly;
+}
+.nav-item {
+  text-decoration: none;
+  color: grey;
+}
+button {
+  background-color: rgba(41, 68, 100, 255);
+  color: white;
+}
+.nav-btn {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.logo {
+  padding: 0.5rem;
+  height: 50px;
+  margin: 5px;
+}
+
+
+.hero-section {
+  justify-content: center;
+  align-content: center;
+
+}
+
+.hero-image {
+  background-image: url(images/hero.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 830px;
+  width: 100%;
+  min-height: 830px;
+
+
+}
+
+
+.hero-image-overlay {
+  background: linear-gradient(transparent, rgba(74, 74, 74, 0.75));
+top: 0;
+left: 0;
+height: 100%;
+position: absolute;
+
+}
+.hero-headline-text {
+  font-family: "Tiempos Headline";
+  font-style: normal;
+  font-weight: normal;
+  max-width: 300px;
+}
+
+.hero-section-text {
+  font-family: "Avenir";
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    /* position: absolute;
+    over
+    bottom: 100.3px;
+    left: 200.1px;
+    max-width: 452px;
+    font-size: 14px;
+    line-height: 1.9em; */
+}
+.hero-section-title {
+  font-size: 14px;
+
+}
+
+.hero-btn {
+  padding: 15px 45px;
+  border-radius: 5px;
+  background-color: #294464;
+  font-family: "Tiempos Headline";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  border: none;
+}
+
+
+p {
+  font-size: 14px;
+    line-height: 2em;
+    text-align: center;
+    max-height: 310px;
+}
+.location-section{
+  background-color: #fafafa
+}
+.locations {
+  color: #8f8f8f;
+  display: flex;
+  flex-direction: column;
+  }
+
+
+.locations-header {
+}
+li {
+  text-align: center;
+font-family: 'Tiempos Headline';
+font-style: normal;
+font-weight: normal;
+color:#8f8f8f
+}
+
+ul > li {
+ list-style: none;
+ font-size: 14px;
+line-height: 2.0em;
+text-align: center;
+font-family: 'Tiempos Headline';
+font-style: normal;
+font-weight: normal;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-evenly {
+justify-content: space-evenly;
+
+ }
+.align-center {
+  align-items: center;
+}

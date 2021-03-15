@@ -12,7 +12,7 @@ var bill = 20;
 
 var payment = 25;
 
-var change = bill - payment;
+var change = payment - bill;
 
 console.log('Value of change:', change);
 

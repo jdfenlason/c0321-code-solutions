@@ -1,6 +1,6 @@
 var fullName = 'Jake Fenlason';
 
-var isCool = 'True';
+var isCool = true;
 
 var totalPets = 2;
 

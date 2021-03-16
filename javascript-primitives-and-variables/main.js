@@ -1,4 +1,4 @@
-var fullName = 'Jake Fenlason';
+var fullName = 'Jake Fenlason ';
 
 var isCool = true;
 

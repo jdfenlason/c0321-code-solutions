@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2,
+h4,
+h5 {
+  font-family: "Barlow", sans-serif;
+}
+h2,
+h4 {
+  font-weight: 600;
+}
+h5 {
+  font-weight: normal;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+img {
+  width: 100%;
+}
+.icon {
+  max-width: 25%;
+}
+.text-content {
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

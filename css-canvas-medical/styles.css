@@ -1,31 +1,27 @@
 header {
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid grey;
-  margin-bottom: 30px;
+  justify-content: space-between;
+  display: flex;
+}
 
-}
-nav {
-  justify-content: space-evenly;
-  display:flex;
-  margin-left: 10px;
-}
-.nav-item,
 a {
   text-decoration: none;
   color: grey;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.header-btn {
+  background-color: rgba(41, 68, 100, 255);
+  color: white;
+  border-radius: 4px;
+  padding: 13px 25px;
+  font-size: 13px;
   margin: 10px;
 }
-.header-btn {
-background-color: rgba(41, 68, 100, 255);
-    color: white;
-    border-radius: 4px;
-    padding: 13px 18px;
-    font-size: 13px;
-    margin: 10px;
-}
+
 .nav-btn {
-   background-color: rgba(41, 68, 100, 255);
+  background-color: rgba(41, 68, 100, 255);
   color: white;
   border-radius: 4px;
   padding: 10px 25px;
@@ -39,8 +35,9 @@ background-color: rgba(41, 68, 100, 255);
   padding: 10px 35px;
   font-size: 13px;
 }
+
 .learn-more-btn {
-   background-color: rgba(41, 68, 100, 255);
+  background-color: rgba(41, 68, 100, 255);
   color: white;
   border-radius: 4px;
   padding: 10px 35px;
@@ -51,7 +48,7 @@ background-color: rgba(41, 68, 100, 255);
 .logo {
   padding: 0.5rem;
   height: 40px;
-  margin: 5px;
+  margin: 10px;
 }
 
 #hero-section {
@@ -61,58 +58,58 @@ background-color: rgba(41, 68, 100, 255);
   margin-top: 40px;
 }
 
-
 .hero-image-overlay {
   position: relative;
   text-align: center;
 }
+
 .hero-image-overlay::before {
   content: "";
   position: absolute;
   width: 82.3%;
   height: 99%;
   top: 2px;
-  left: 109.3px;
+  left: 105.3px;
   background-image: linear-gradient(transparent, rgb(108 102 102 / 75%));
   z-index: 1;
 }
+
 img {
   max-width: 830px;
   position: relative;
 }
 
 .hero-section-text {
-  font-family: "Avenir";
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-weight: 500;
   color: white;
   position: absolute;
   left: 212px;
-  top: 93px;
+  top: 134px;
   max-width: 376px;
   font-size: 11.5px;
   line-height: 1.9em;
   overflow: hidden;
   text-align: left;
-  z-index: 1;
+  z-index: 10;
 }
+
 .hero-section-title {
-  font-size: 11px;
-  font-family: "Tiempos Headline";
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 1.5em;
-  max-width: 400px;
+  line-height: 1.9em;
+  max-width: 269px;
   text-align: left;
-  color:white
+  color: white;
 }
 
 h3,
 h4,
 h6 {
   color: rgba(74, 74, 74, 0.75);
-  font-family: "Avenir";
+  font-family: "Avenir", sans-serif;
   font-style: normal;
   font-weight: 500;
 }
@@ -123,6 +120,7 @@ h4 {
   max-width: 400px;
   justify-content: center;
 }
+
 #location-section {
   background-color: #fbf8f8;
   text-align: center;
@@ -132,6 +130,7 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+
 .location-text {
   display: flex;
   flex-direction: column;
@@ -144,16 +143,23 @@ h4 {
   list-style: none;
   font-size: 14px;
   line-height: 4em;
-  font-family: "Tiempos Headline";
+  font-family: "Tiempos Headline", sans-serif;
   font-style: normal;
   font-weight: normal;
 }
+
+.ready {
+  margin-left: 100px;
+}
+
 .justify-center {
   justify-content: center;
 }
+
 .justify-evenly {
   justify-content: space-evenly;
 }
+
 .align-center {
   align-items: center;
 }
@@ -161,59 +167,56 @@ h4 {
 .justify-between {
   justify-content: space-between;
 }
+
 footer {
   margin: 10px;
 }
-footer > a {
-color: rgba(74, 74, 74, 0.75);
-}
 
-.logo-2{
+.logo-2 {
   padding: 0.5rem;
   height: 40px;
-  text-align: center;
-  align-content: center;
-  width: 32%;
-  margin-top: 40px;
-
+  margin-left: 81px;
+  margin-top: 16px;
 }
 
 #contact-section {
   background-color: #4a4a4abf;
   height: 400px;
   color: white;
-  text-align: center;
 }
 
-.contact-list, a {
+.height {
+  max-height: 148px;
+}
+
+.contact-list > * {
   color: white;
   list-style: none;
   font-size: 14px;
-  line-height: 2em;
-  font-family: "Tiempos Headline";
-  font-style: normal;
-  font-weight: normal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center ;
-  max-width: 316px;
+  line-height: 2.9em;
+  justify-items: center;
+  list-style-type: none;
   text-align: left;
 }
+
 .address > * {
   list-style: none;
   font-size: 14px;
-  font-family: "Tiempos Headline";
   font-style: normal;
   font-weight: normal;
-  line-height: 1.9rem;
+  line-height: 1.5rem;
   text-align: left;
-
-  max-width:200px;
-
+  justify-content: center;
 }
 
-.product {
-  margin-top 20px;
-}> ul {
-  text-align: center;
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 282px;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.address {
+  margin-left: 50px;
 }

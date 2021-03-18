@@ -29,11 +29,13 @@ body {
 header {
   font-family: 'Dm Sans', sans-serif;
   text-align: center;
+  font-weight: bold;
 }
 
 img {
   width: 100%;
   object-fit: contain;
+  margin-bottom: 5px;
 }
 
 .items {
@@ -48,22 +50,23 @@ img {
 
 .inline {
   display: inline-block;
-  border-left: 1px solid grey;
+  border-left: 1px solid #dedede;
   padding: 3px;
-  color: grey;
+  color: #dedede;
 }
 
 span {
   max-width: 10px;
+  font-style: 'Dm Sans', sans-serif;
 }
 
 .price-inline {
-  background-color: beige;
+  background-color: #fff2e7;
   max-width: 25px;
   border-radius: 4px;
   margin-right: 2px;
 }
 
 .s-price {
-  color: grey;
+  color: #dedede;
 }

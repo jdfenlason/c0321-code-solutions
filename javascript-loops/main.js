@@ -10,7 +10,7 @@
 function getNumbersToTen() {
   var numbers = [];
   var currentNumber = 1;
-  while (currentNumber < 11) {
+  while (currentNumber <= 10) {
     numbers.push(currentNumber);
     currentNumber++;
   }
@@ -30,8 +30,9 @@ function getEvenNumbersToTwenty() {
 function repeatWord(word, times) {
   var count = 1;
   var repeated = '';
-  for (count; count < times; count++) {
+  while (count <= times) {
     repeated += word;
+    count++;
   }
   return repeated;
 }

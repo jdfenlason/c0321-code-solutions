@@ -19,7 +19,7 @@ function isOldEnoughToDrink(age) {
     return;
     false;
   }
-};
+}
 
 function isOldEnoughToDrive(age) {
   if ((age) => 18) {
@@ -27,11 +27,11 @@ function isOldEnoughToDrive(age) {
   } else {
     return false;
   }
-};
+}
 
 function isOldEnoughToDrinkAndDrive(age) {
   return false;
-};
+}
 
 function isUnderFive(number) {
   if (number <= 5) {
@@ -39,7 +39,7 @@ function isUnderFive(number) {
   } else {
     return false;
   }
-};
+}
 
 function isEven(number) {
   if (number % 2 === 0) {
@@ -47,7 +47,7 @@ function isEven(number) {
   } else {
     return false;
   }
-};
+}
 
 function startsWithJ(string) {
   if (string[0] === "J") {
@@ -55,7 +55,7 @@ function startsWithJ(string) {
   } else {
     return false;
   }
-};
+}
 
 function isOldEnoughToDrink(person) {
   if ((person) => 21) {
@@ -63,18 +63,18 @@ function isOldEnoughToDrink(person) {
   } else {
     return false;
   }
-};
+}
 function isOldEnoughToDrive(person) {
   if ((person) => 18) {
     return true;
   } else {
     return false;
   }
-};
+}
 
 function isOldEnoughToDrinkAndDrive(person) {
   return false;
-};
+}
 
 function categorizeAcidity(ph) {
   if (ph === 7) {
@@ -88,7 +88,7 @@ function categorizeAcidity(ph) {
   } else {
     return "invalid ph level";
   }
-};
+}
 
 function introduceWarnerBro(name) {
   if (name === "yakko" || name === "wakko") {
@@ -99,4 +99,4 @@ function introduceWarnerBro(name) {
   } else {
     return "Goodnight everybody";
   }
-};
+}

@@ -1,8 +1,15 @@
 /* exported findIndex */
 function findIndex(array, value) {
-  var newArray = [];
+  var filter = [];
+  var notValue = [];
   for (var i = 0; i < array.length; i++) {
-    newArray = array.length[i];
+    if (array[i] === value) {
+      filter.push([i]);
+      return filter[0];
+    }
   }
-  return newArray;
+  if (array[i] !== value) {
+    notValue.push(array[i]);
+  }
+  return -1;
 }

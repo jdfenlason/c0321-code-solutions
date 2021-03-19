@@ -1,8 +1,8 @@
 /* exported getStudentNames */
-function getStudentNames(student) {
-  var names = [];
-  for (var key in student) {
-    names.push(key);
+function getStudentNames(students) {
+  var values = [];
+  for (var names of students) {
+    values.push(students[names]);
   }
-  return names;
+  return values;
 }

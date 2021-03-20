@@ -17,6 +17,7 @@ function isEven(number) {
     return false;
   }
 }
+
 function isUnderFive(number) {
   if (number < 5) {
     return true;

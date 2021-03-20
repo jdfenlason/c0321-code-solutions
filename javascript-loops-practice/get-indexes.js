@@ -3,5 +3,6 @@ function getIndexes(array) {
   var newArray = [];
   for (var i = 0; i < array.length; i++) {
     newArray.push(i);
-  } return newArray;
+  }
+  return newArray;
 }

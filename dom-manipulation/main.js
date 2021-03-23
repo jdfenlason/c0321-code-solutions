@@ -12,7 +12,7 @@ $hotBtn.addEventListener('click', function (e) {
   } else if (amntClicks < 7) {
     tempChange = 'cool';
   } else if (amntClicks < 10) {
-    tempChange = 'tempid';
+    tempChange = 'tepid';
   } else if (amntClicks < 13) {
     tempChange = 'warm';
   } else if (amntClicks < 16) {

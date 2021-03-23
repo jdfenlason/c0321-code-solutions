@@ -1,27 +1,24 @@
 var amntClicks = 0;
 
-var $btn = document.querySelector('.hot-button');
-var $clicks = document.querySelector('.click-count');
+var $hotBtn = document.querySelector('.hot-button');
+var $clickCounter = document.querySelector('.click-count');
 
-$btn.addEventListener('click', function () {
+$hotBtn.addEventListener('click', function (e) {
   amntClicks++;
-
-  $clicks.textContent = 'Clicks: ' + amntClicks;
+  var tempChange;
+  $clickCounter.textContent = 'Clicks: ' + amntClicks;
   if (amntClicks < 4) {
-    $btn = $btn.class.name('.hot-button.cold');
-  }
-  if (amntClicks < 7) {
-    $btn = $btn.className('.hot-button.cool');
-  }
-  if (amntClicks < 10) {
-    $btn = $btn.className = '.hot-button tempid';
-  }
-  if (amntClicks < 13) {
-    $btn = $btn.className = '.hot-button.warm';
-  }
-  if (amntClicks < 16) {
-    $btn = $btn.className = '.hot-button.hot';
+    tempChange = 'cold';
+  } else if (amntClicks < 7) {
+    tempChange = 'cool';
+  } else if (amntClicks < 10) {
+    tempChange = 'tempid';
+  } else if (amntClicks < 13) {
+    tempChange = 'warm';
+  } else if (amntClicks < 16) {
+    tempChange = 'hot';
   } else {
-    $btn = $btn.className = '.hot-button.nuclear';
+    tempChange = 'nuclear';
   }
+  $hotBtn.className = 'hot-button ' + tempChange;
 });

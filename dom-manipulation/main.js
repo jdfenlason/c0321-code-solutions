@@ -8,20 +8,20 @@ $btn.addEventListener('click', function () {
 
   $clicks.textContent = 'Clicks: ' + amntClicks;
   if (amntClicks < 4) {
-    $btn.className = 'cold';
+    $btn = $btn.class.name('.hot-button.cold');
   }
   if (amntClicks < 7) {
-    $btn.className = 'cool';
+    $btn = $btn.className('.hot-button.cool');
   }
   if (amntClicks < 10) {
-    $btn.className = 'tepid';
+    $btn = $btn.className = '.hot-button tempid';
   }
   if (amntClicks < 13) {
-    $btn.className = 'warm';
+    $btn = $btn.className = '.hot-button.warm';
   }
   if (amntClicks < 16) {
-    $btn.className = '.hot';
+    $btn = $btn.className = '.hot-button.hot';
   } else {
-    $btn.className = '.hot-button.nuclear';
+    $btn = $btn.className = '.hot-button.nuclear';
   }
 });

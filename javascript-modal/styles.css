@@ -2,12 +2,17 @@
   box-sizing: border-box;
 }
 
-.container.on {
-  background-color: rgba(0, 0, 0, 0.8);
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container.off {
-  background: transparent;
+.container.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {
@@ -18,7 +23,7 @@
   justify-content: center;
 }
 
-.modalBtn {
+.modalBtn.active {
   background-color: blue;
   color: white;
   padding: 15px 55px;
@@ -26,7 +31,19 @@
   box-shadow: 1px 1px;
   font-size: 20px;
   position: fixed;
-  z-index: -1;
+  pointer-events: all;
+}
+
+.modalBtn.inactive {
+  background-color: blue;
+  color: white;
+  padding: 15px 55px;
+  border-radius: 8px;
+  box-shadow: 1px 1px;
+  font-size: 20px;
+  position: absolute;
+  z-index: -3;
+  pointer-events: none;
 }
 
 .modal {
@@ -38,10 +55,12 @@
   height: 250px;
   background-color: white;
   border-radius: 8px;
+  font-weight: bold;
+  z-index: 5;
 }
 
 .nobtn {
-  background-color: red;
+  background-color: rgba(235, 93, 93, 255);
   color: white;
   padding: 10px 40px;
   font-size: 20px;

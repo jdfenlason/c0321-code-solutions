@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fef9f1;
+}
+
+.body.off {
+  background-color: rgb(10, 8, 8);
+}
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1ch;
+  height: 800px;
+}
+
+button {
+  background-color: #faea84;
+  border: #faea84;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  box-shadow: 1px -11px 5px #fdf4cc;
+}
+
+.button.off {
+  background-color: rgb(42, 40, 40);
+  border: black;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: -2px -20px 0 3px;
+}

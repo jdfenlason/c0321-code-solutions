@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- your code here 👇 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width" />
+
 
     <title>CSS Media Queries - Meta Viewport</title>
     <link rel="stylesheet" href="reset.css" />
@@ -23,10 +23,8 @@
         background-color: blue;
       }
 
-      @media screen and (min-width: 568px) {
+      @media only screen and (min-width: 568px) {
         .box {
-          width: 200px;
-          height: 200px;
           background-color: red;
         }
       }

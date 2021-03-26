@@ -22,7 +22,7 @@ console.log('Type of myArray ', typeof myArr);
 console.log('   JSON string of book array: ', JSON.stringify(myArr));
 console.log('Type of JSON string: ', typeof JSON.stringify(myArr));
 
-console.log('String in JSON FORM with single quotes ', '{ "name":"John", "Number ID": 37883}');
-console.log('Student typeof ', typeof '{ "name":"John", "Number ID": 37883}');
+console.log('String in JSON FORM with single quotes ', '{ "name":"John", "id": 37883}');
+console.log('Student typeof ', typeof '{ "name":"John", "id": 37883}');
 
-console.log('JSON.Parse: ', JSON.parse('{ "name":"John", "Number ID": 37883}'));
+console.log('JSON.Parse: ', JSON.parse('{ "name":"John", "id": 37883}'));

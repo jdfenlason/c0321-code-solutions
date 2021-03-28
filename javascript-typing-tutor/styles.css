@@ -3,8 +3,9 @@
 }
 
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Kiwi Maru", serif;
   font-size: 4rem;
+  overflow: hidden;
 }
 
 .container {
@@ -15,18 +16,35 @@ body {
   justify-content: center;
 }
 
+#space {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#spaceOne {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#spaceTwo {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+#spaceThree {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 .spanText {
   display: inline-block;
-  border-bottom: 0.02rem solid black;
   padding-bottom: 0.4rem;
 }
 
-.space {
+.spanText.current {
   display: inline-block;
-  border-bottom: 2px solid black;
-  padding-right: 3px;
-  margin-right: 4px;
-  text-decoration: black;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.02rem solid black;
 }
 
 .spanText.correct {
@@ -36,9 +54,4 @@ body {
 .spanText.incorrect {
   color: red;
   border-bottom: 0.02rem solid red;
-}
-
-.box {
-  margin-right: 0.8rem;
-  margin-left: 0.8rem;
 }

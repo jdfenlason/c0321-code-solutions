@@ -1,19 +1,17 @@
 var $text = document.querySelectorAll('span');
 var index = 0;
 
-window.addEventListener('keydown', function (event) {
+document.addEventListener('keydown', function (event) {
+  if (index < $text.length) {
+    if ($text[index].textContent === event.key) {
+      $text[index].className = 'spanText correct';
 
-  var $currentChar = $text.item(index).textContent;
-
-  if ($currentChar === event.key) {
-    $text.item(index).className = 'spanText correct';
-
-    index++;
-    $text.item(index).className = 'spanText current';
-
-  } else {
-    $text.item(index).className = 'spanText incorrect';
-
+      index++;
+      if (index < $text.length) {
+        $text[index].className = 'spanText current';
+      }
+    } else {
+      $text[index].className = 'spanText incorrect';
+    }
   }
-
 });

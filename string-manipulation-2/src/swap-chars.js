@@ -6,6 +6,8 @@ function swapChars(firstIndex, secondIndex, string) {
       swapString += string[secondIndex];
     } else if (i === secondIndex) {
       swapString += string[firstIndex];
+    } else {
+      swapString += string[i];
     }
   }
   return swapString;

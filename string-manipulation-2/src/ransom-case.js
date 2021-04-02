@@ -4,8 +4,9 @@ function ransomCase(string) {
   for (var i = 0; i < string.length; i++) {
     if (i % 2 === 0) {
       ranString += string[i].toLowerCase();
-
-      return ranString;
+    } else {
+      ranString += string[i].toUpperCase();
     }
   }
+  return ranString;
 }

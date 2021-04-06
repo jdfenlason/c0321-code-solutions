@@ -1,9 +1,10 @@
 /* exported capitalizeWords */
 function capitalizeWords(string) {
   var words = string.split(' ');
-  var capWords = '';
+  var capWords = [];
   for (var i = 0; i < words.length; i++) {
-    capWords += words[i][0].toUpperCase() + words[i].slice(1).toLowerCase() + ' ';
+    words[i] = words[i].toLowerCase();
+    capWords.push(words[i][0].toUpperCase() + words[i].slice(1));
   }
-  return capWords.slice(0, capWords.length - 1);
+  return capWords.join(' ');
 }

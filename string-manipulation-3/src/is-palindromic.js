@@ -1,19 +1,9 @@
 /* exported isPalindromic */
 function isPalindromic(string) {
-  var leftIndex = 0;
-  var rightIndex = string.length - 1;
-  while (leftIndex < rightIndex) {
-    if (string[leftIndex] === ' ') {
-      leftIndex++;
-    } else if (string[rightIndex] === ' ') {
-      rightIndex--;
-    } else {
-      if (string[rightIndex] !== string[leftIndex]) {
-        return false;
-      }
-      leftIndex++;
-      rightIndex--;
-    }
+  var stringSplit = string.split(' ').join('');
+  var reversedString = string.split('').reverse().join('').split(' ').join('');
+  if (stringSplit === reversedString) {
+    return true;
   }
-  return true;
+  return false;
 }

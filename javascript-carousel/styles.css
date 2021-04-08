@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  height: 100vh;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.fa-chevron-right {
+  margin-left: 3rem;
+}
+
+.fa-chevron-left {
+  margin-right: 3rem;
+}
+
+.fa-circle {
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+
+.carousel {
+  width: 50rem;
+  margin: 0 auto;
+  border: 5px solid black;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.half-col {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.character-images {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}

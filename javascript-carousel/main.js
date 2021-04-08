@@ -4,8 +4,7 @@ var $rightArrow = document.querySelector('.fa-chevron-right');
 var $circleContainer = document.querySelector('.circle-container');
 var $circle = document.querySelectorAll('.circle');
 var intervalId = null;
-// intervalId = setInterval(autoSlide, 3000);
-// console.log(intervalId);
+
 var counter = 0;
 
 $leftArrow.addEventListener('click', leftArrowClick);
@@ -17,15 +16,13 @@ function autoSlide() {
   if (counter >= 5) {
     counter = 0;
   }
-  for (var i = 0; $circle.length; i++) {
+  for (var i = 0; i < $circle.length; i++) {
     if (i === counter) {
       $images[i].className = 'active';
       $circle[i].className = 'fas fa-circle circle';
     } else {
       $images[i].className = 'hidden';
       $circle[i].className = 'far fa-circle circle';
-      // console.log($images[i]);
-      // console.log($circle[i]);
     }
   }
 }
@@ -89,3 +86,5 @@ function circleContainerClick(event) {
   }
   intervalId = setInterval(autoSlide, 3000);
 }
+
+intervalId = setInterval(autoSlide, 3000);

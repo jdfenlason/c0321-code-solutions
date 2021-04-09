@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  max-width: 1250px;
   margin: auto;
   background-color: white;
 }
@@ -43,7 +42,7 @@
 }
 
 .col-4 {
-  max-width: 32.33%;
+  max-width: 36.43%;
 }
 
 .col-5 {
@@ -51,7 +50,7 @@
 }
 
 .col-6 {
-  max-width: 49%;
+  max-width: 50%;
 }
 
 .col-7 {

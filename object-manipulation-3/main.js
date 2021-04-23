@@ -6,7 +6,6 @@ function Player(name) {
 function Deck() {
   this.cards = [];
 }
-
 Deck.prototype.createDeck = function (suits, ranks) {
   suits = ['clubs', 'diamonds', 'hearts', 'spades'];
   ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'jack', 'queen', 'king', 'ace'];
@@ -24,7 +23,6 @@ Deck.prototype.createDeck = function (suits, ranks) {
     }
   }
 };
-
 Deck.prototype.deal = function (cardsPerHand) {
   var deckHands = [];
   while (deckHands.length < cardsPerHand) {
@@ -33,18 +31,12 @@ Deck.prototype.deal = function (cardsPerHand) {
   }
   return deckHands;
 };
-
-// var deck = new Deck();
-// deck.createDeck();
-// console.log(deck.deal(4));
-
 var gamePlayers = [
   new Player('Odin'),
   new Player('Thor'),
   new Player('Loki'),
   new Player('Balder')
 ];
-
 function gameHandler(playersArray, cardsPerHand) {
   var deck = new Deck();
   deck.createDeck();
@@ -61,7 +53,6 @@ function gameHandler(playersArray, cardsPerHand) {
   console.log(playersArray);
   return playersArray[indexOfMax(score)].name;
 }
-
 function indexOfMax(array) {
   var max = array[0];
   var maxIndex = 0;
@@ -75,5 +66,5 @@ function indexOfMax(array) {
 }
 console.log(
   'Winner Winner Chicken Dinner,',
-  gameHandler(gamePlayers, 5) + '!'
+  gameHandler(gamePlayers, 2) + '!'
 );

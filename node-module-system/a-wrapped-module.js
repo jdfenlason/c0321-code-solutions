@@ -1,0 +1,10 @@
+console.log('The typeof exports is:', typeof exports);
+console.log('  The value ofexports is:', exports);
+console.log('The typeof require is:', typeof require);
+console.log('  The value of require is:', require);
+console.log('The typeof module is:', typeof module);
+console.log('  The value of module is:', module);
+console.log('The typeof _filename is:', typeof __filename);
+console.log('  The value of __filename is:', __filename);
+console.log('The typeof __dirname is:', typeof __dirname);
+console.log('  The value of __dirname is:', __dirname);

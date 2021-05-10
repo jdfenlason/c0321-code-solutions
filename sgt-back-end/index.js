@@ -39,6 +39,7 @@ app.post('/api/grades', (req, res) => {
   }
   if (score < 1 || score > 100) {
     res.status(400).json({ error: 'Score MUST be a number from 1 to 100' });
+    return;
   }
   const sql = `
     insert into "grades" ("name", "course", "score")

@@ -21,5 +21,5 @@ console.log('Numbers that are over 5:', overFive);
 const startWithE = names.filter(words => words.startsWith('E'));
 console.log('Names that start with E:', startWithE);
 
-const haveD = names.filter(words => words.includes('d' || 'D'));
+const haveD = names.filter(words => words.includes('d') || words.includes('D'));
 console.log('Names that have a D:', haveD);

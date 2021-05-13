@@ -8,7 +8,6 @@ class CustomButton extends React.Component {
     );
   }
 }
-
 const element = (
   <div>
     <CustomButton text="I" />

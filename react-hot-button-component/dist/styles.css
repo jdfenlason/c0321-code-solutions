@@ -36,11 +36,6 @@ button {
   color: black;
 }
 
-.freezing:hover,
-.cold:hover,
-.tepid:hover,
-.warm:hover,
-.hot:hover,
-.nuclear:hover {
+button:hover {
   cursor: pointer;
 }

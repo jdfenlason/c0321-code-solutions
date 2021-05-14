@@ -1,0 +1,41 @@
+button {
+  width: 5rem;
+  height: 3.5rem;
+  border: 1px solid black;
+  box-shadow: 10px 5px 5px black;
+  color: white;
+}
+
+.freezing {
+  background-color: #2c1e4e;
+}
+
+.cold {
+  background-color: #674fa3;
+}
+
+.tepid {
+  background-color: #e06767;
+}
+
+.warm {
+  background-color: #e09967;
+}
+
+.hot {
+  background-color: #fce353;
+}
+
+.nuclear {
+  background-color: white;
+}
+
+.warm,
+.hot,
+.nuclear {
+  color: black;
+}
+
+button:hover {
+  cursor: pointer;
+}

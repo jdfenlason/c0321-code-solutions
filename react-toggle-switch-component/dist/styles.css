@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+#switch {
+  width: 6rem;
+  height: 3rem;
+  background-color: lightgrey;
+  display: inline-block;
+  border-radius: 6rem;
+  border: 2px solid grey;
+  position: relative;
+}
+
+#circle {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border-radius: 8rem;
+  border: 1px solid darkgrey;
+  position: absolute;
+}
+
+#switch.active {
+  background-color: limegreen;
+}
+
+#circle.active {
+  right: 0;
+}
+
+span {
+  margin-left: 1rem;
+  font-size: 3em;
+}

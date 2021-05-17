@@ -1,0 +1,28 @@
+
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+.fas {
+  margin-left: 0.5rem;
+}
+
+.fa-times {
+  color: red;
+}
+
+.fa-check {
+  color: green;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+}
+
+.error {
+  margin: 0;
+  font-size: 0.8rem;
+  color: red;
+}

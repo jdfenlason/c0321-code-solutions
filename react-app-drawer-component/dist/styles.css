@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1rem;
+}
+
+.menu-icon {
+  font-size: 1em;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.menu {
+  width: 250px;
+  left: -250px;
+  background-color: white;
+  transition: transform 0.2s linear;
+}
+
+.menu.active {
+  transform: translateX(100%);
+  box-shadow: 12px 0 25px -6px rgb(40, 40, 40);
+}
+
+.overlay {
+  right: 0;
+  width: 100%;
+  background-color: rgb(74, 74, 74);
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.menu h2 {
+  margin: 2rem 1rem;
+}
+
+.menu,
+.overlay {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}

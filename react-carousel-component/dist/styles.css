@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  height: 100vh;
+}
+
+.right,
+.left {
+  font-size: 2.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.right {
+  margin-left: 3rem;
+}
+
+.left {
+  margin-right: 3rem;
+}
+
+.circle {
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.carousel {
+  width: 50rem;
+  margin: 0 auto;
+  border: 5px solid black;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-container {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}

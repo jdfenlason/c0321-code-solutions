@@ -9,22 +9,22 @@
   height: 100vh;
 }
 
-.fa-chevron-right,
-.fa-chevron-left {
+.right,
+.left {
   font-size: 2.5rem;
   padding: 1rem;
   cursor: pointer;
 }
 
-.fa-chevron-right {
+.right {
   margin-left: 3rem;
 }
 
-.fa-chevron-left {
+.left {
   margin-right: 3rem;
 }
 
-.fa-circle {
+.circle {
   font-size: 1.5rem;
   padding: 0.75rem;
   cursor: pointer;

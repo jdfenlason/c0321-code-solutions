@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.name {
+  border: 2px solid;
+  background-color: lightgray;
+  padding: 1rem;
+  font-size: 1.4rem;
+  width: 25rem;
+  cursor: pointer;
+}
+
+.content {
+  width: 25rem;
+  border: 2px solid;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}

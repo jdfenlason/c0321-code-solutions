@@ -6,6 +6,7 @@ class Accordion extends React.Component {
     this.state = { isActive: null };
     this.handleClick = this.handleClick.bind(this);
   }
+
   handleClick(event) {
     const clickedTopic = event.target.getAttribute('topic');
     if (clickedTopic === this.state.isActive) {

@@ -75,7 +75,8 @@ app.post('/api/auth/sign-in', (req, res, next) => {
           res.status(200).json({ token: token, user: payload });
         })
         .catch(err => next(err));
-    });
+    })
+    .catch(err => next(err));
 });
 /* your code starts here */
 

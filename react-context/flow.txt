@@ -1,0 +1,29 @@
+1) User can sign up
+  -Landing page is rendered where it either shows the sign-in page or the sing-up page
+  -User clicks on the "Register now" link, which triggers the haschange event and updates the route property of state, renders the sign-up page.
+-once the sign-up page is rendered the client waits for the user input.
+-user inputs a username and a password and the the register button is clicked the client sends a POST fetch to the server
+
+-The server checks to see if the username and password are filled in.  If so it hashes the password and sends a paramaterized SQL query to the database to create a new user in the users table.
+
+The server returns a status code indicating the success or failure of the request along with the created login if the login was successful
+
+2) User can sign in:
+
+- User inputs username and password and clicks the LOGIN button
+- when the event is triggered by the user the client sends a POST fetch to the server
+-the Server checks to see if their was a valid input. If not, the server throws an error.  If it was valid the server GET Request creating a paramaterized SQL select statement and wueries the DB to get the users info
+-Next the server checks to see if username exists in the database and compares it to the hashed password from the database.
+-If the hashed passwords do not correspond with one another the server throws an error. Else the server generates a TOKEN and a payload to the client.
+-If the client recieves a TOKEN the user can log in successfully. The client will save the jwt to the local storage and set state with the users info.
+
+3) The User Can Stay Signed in (even if they refresh the page)
+
+-When the app loads, the browser checks the local storage to see if there is a token saved.  If there is a token in local storage it will update state so state will either have a token or a null value as it's property  At this point the client is listening for hashchanges and updates state accordingly. The token being stored in local storage allows the user to refresh the page.  If the token was not there then the user would be sent to the authpage
+
+4) User can sign out
+-when the user clicks the Sign out button the token is removed from local storage and updates the state via a haschange event.  This then re-renders the page as the Auth sign-up page again.
+
+
+LoVe GeTtInG RiCk RoLlEd
+THANKS FOR THE MEMES!!!!!!
